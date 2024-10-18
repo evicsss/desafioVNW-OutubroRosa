@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #E4EEF1;
+    background-color:#FF69B4;
+    height: 15vh;
+
+
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        width: 40%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                color: #E4EEF1;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.primeiraParte {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFD9EC;
+
+    p {
+        width: 40%;
+        font-size: 22px;
+    }
+
+    img {
+        width: 19vw;
+    }
+}
+
+.segundaParte {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FF69B4;
+
+    p {
+        width: 40%;
+        font-size: 20px;
+        color: #E4EEF1;
+    }
+
+    img {
+        width: 22vw;
+    }
+}
+
+.terceiraParte {
+    height: 50vh;
+    padding: 20vh;
+    display: flex;
+    align-items: center;
+    color: #FFD9EC;
+    gap: 80px;
+
+    img {
+        width: 15vw;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.1) translateY(-5px); 
+      }
+}
+
+.quartaParte {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FF69B4;
+    padding: 15px;
+    gap: 10px;
+
+    ul {
+       text-align: center;
+    }
+
+    ul li {
+        margin: 1px 0;
+        color: #E4EEF1;
+        font-weight: bold;
+    }
+    img {
+        width: 3.5vw;
+    }
+
+    .icon {
+        width: 6vw;
+    }
+    }
+
+
+@media (max-width: 768px) {
+    header {
+        height: 20vh;
+        flex-direction: column;
+
+        nav {
+            width: 95%;
+
+            ul{
+                a {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
